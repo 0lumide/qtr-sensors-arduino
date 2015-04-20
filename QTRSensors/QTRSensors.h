@@ -126,6 +126,8 @@ class QTRSensors
     unsigned int *calibratedMinimumOff;
     unsigned int *calibratedMaximumOff;
 
+    void setCalibration(int min[], int max[]);
+
     ~QTRSensors();
 
   protected:
@@ -263,6 +265,5 @@ class QTRSensorsAnalog : public QTRSensors
 
     unsigned char _numSamplesPerSensor;
 };
-
 
 #endif

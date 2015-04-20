@@ -514,6 +514,30 @@ void QTRSensorsAnalog::init(unsigned char* pins,
 }
 
 
+
+//Added function to manually set the calibration
+void QTRSensors::setCalibration(int minCal[], int maxCal[]){
+    //I call calibrate just to create the arrays that hold the min and max, since I was too lazy to create them myself
+    calibrate();
+    int i = 0;
+        // If the malloc failed, don't continue.
+        if(calibratedMaximumOn == 0)
+            return;
+
+        // Initialize the max and min calibrated values to values that
+        // will cause the first reading to update them.
+
+        for(i=0;i<_numSensors;i++)
+            (calibratedMaximumOn)[i] = maxCal[i];
+
+        // If the malloc failed, don't continue.
+        if(calibratedMinimumOn == 0)
+            return;
+
+        for(i=0;i<_numSensors;i++)
+            (calibratedMinimumOn)[i] = minCal[i];
+}
+
 // Reads the sensor values into an array. There *MUST* be space
 // for as many values as there were sensors specified in the constructor.
 // Example usage:
