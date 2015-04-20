@@ -1,18 +1,18 @@
-h1. Added a function to set the calibration values manually. -0lumide
+### Added a function to set the calibration values manually. -0lumide
 
-h1. Arduino Library for the Pololu QTR Reflectance Sensors
+# Arduino Library for the Pololu QTR Reflectance Sensors
 
 Version: 2.1.1
 Release Date: 2014-05-02
 "www.pololu.com":http://www.pololu.com/
 
-h2. Summary
+## Summary
 
 This is a library for the "Arduino":http://www.pololu.com/catalog/product/2191 that interfaces with the "Pololu QTR reflectance sensors":http://www.pololu.com/catalog/category/123 ("QTR-1A":http://www.pololu.com/catalog/product/958, "QTR-1RC":http://www.pololu.com/catalog/product/959, "QTR-8A":http://www.pololu.com/catalog/product/960, and "QTR-8RC":http://www.pololu.com/catalog/product/961).
 
 For documentation, please see the "user's guide":http://www.pololu.com/docs/0J19 for the library on Pololu's website.
 
-h2. Version History
+## Version History
 
 * 2.1.1 (2014-05-02): Minor improvements to @read()@ behavior and whitespace cleanup.
 * 2.1.0 (2013-04-18): Improved existing examples and added two new examples for printing raw values.
