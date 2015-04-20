@@ -1,4 +1,4 @@
-### Added a function to set the calibration values manually. -0lumide
+##### Added a function to set the calibration values manually. -0lumide
 
 # Arduino Library for the Pololu QTR Reflectance Sensors
 
